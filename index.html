@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tabla de Posiciones - Copa Tintal 2025</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #000000, #FFD700);
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: #FFD700;
+      text-shadow: 2px 2px #000;
+    }
+    .admin-section {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .table-container {
+      overflow-x: auto;
+      background-color: #111;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      animation: fadeIn 1s ease-in;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #222;
+    }
+    th, td {
+      border: 1px solid #FFD700;
+      padding: 12px;
+      text-align: center;
+      font-size: 1rem;
+    }
+    th {
+      background-color: #FFD700;
+      color: #000;
+      font-size: 1.1rem;
+    }
+    td input {
+      background: transparent;
+      border: none;
+      color: white;
+      text-align: center;
+      font-size: 1rem;
+      width: 100%;
+    }
+    td input:disabled {
+      color: white;
+    }
+    .save-btn {
+      background: #FFD700;
+      color: #000;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      margin-top: 20px;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: background 0.3s ease;
+    }
+    .save-btn:hover {
+      background: #ffaa00;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Copa Tintal 2025 - Tabla de Posiciones por Club</h1>
+
+  <div class="admin-section">
+    <input type="password" id="adminPass" placeholder="Contraseña de edición">
+    <button class="save-btn" onclick="enableEditing()">Activar edición</button>
+    <button class="save-btn" onclick="guardarDatos()">Guardar cambios</button>
+  </div>
+
+  <div class="table-container">
+    <table id="tablaClubes">
+        <div class="clubes-container" style="padding: 30px; background: #111; border-radius: 20px; box-shadow: 0 0 25px yellow; color: #fff; max-width: 900px; margin: auto;">
+  <h2 style="text-align: center; font-size: 28px; color: gold; margin-bottom: 20px;">Tabla de Posiciones por Club</h2>
+  <table style="width: 100%; border-collapse: collapse; text-align: center; font-size: 18px;">
+    <thead>
+      <tr style="background: #222; color: yellow;">
+        <th style="padding: 10px; border-bottom: 2px solid #444;">#</th>
+        <th style="padding: 10px; border-bottom: 2px solid #444;">Club</th>
+        <th style="padding: 10px; border-bottom: 2px solid #444;">🥇 Oro</th>
+        <th style="padding: 10px; border-bottom: 2px solid #444;">🥈 Plata</th>
+        <th style="padding: 10px; border-bottom: 2px solid #444;">🥉 Bronce</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>PATIN LATINO</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>2</td><td>SPORTING CAPITAL</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>3</td><td>FORZA</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>4</td><td>LIBERTAD</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>5</td><td>ECO-PATIN</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>6</td><td>COLOSAL</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>7</td><td>ARZARIOZ</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>8</td><td>LAPONTE</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>9</td><td>FOUR WHEELS</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>10</td><td>BEGINNERS JOSEP</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>11</td><td>COLSUBSIDIO</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>12</td><td>FAST KIDS</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>13</td><td>SPEED RIEDER</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>14</td><td>FUTDEPORT</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>15</td><td>LJM SKATE</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>16</td><td>ALEMAN</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>17</td><td>DINAMIC</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>18</td><td>SOBRE RUEDAS TINTAL</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>19</td><td>EN LA LÍNEA PEDAGÓGICOS</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>20</td><td>FLY KIDS</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>21</td><td>RECREAR EN LINEA</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>22</td><td>MERLIN ROLLERS</td><td>0</td><td>0</td><td>0</td></tr>
+    </tbody>
+  </table>
+</div>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    const URL = "https://script.google.com/macros/s/AKfycbyq5yYNKaa4F9ds2NDs4-egWlO9BGzS4jB2Bp7cX7Hl1hpbb1ToHZdFIt4jKrowcqU/exec";
+    const PASSWORD = "copatintal2025";
+    const SHEET_NAME = "POSICIONES";
+
+    async function cargarDatos() {
+      const response = await fetch(URL + '?sheet=' + SHEET_NAME);
+      const data = await response.json();
+      const tbody = document.querySelector("#tablaClubes tbody");
+      tbody.innerHTML = "";
+      data.forEach(row => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td><input type="text" value="${row.Club}" disabled></td>
+          <td><input type="number" value="${row.Oro}" disabled></td>
+          <td><input type="number" value="${row.Plata}" disabled></td>
+          <td><input type="number" value="${row.Bronce}" disabled></td>
+          <td><input type="number" value="${row.Total}" disabled></td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function enableEditing() {
+      const pass = document.getElementById("adminPass").value;
+      if (pass !== PASSWORD) {
+        alert("Contraseña incorrecta");
+        return;
+      }
+      const inputs = document.querySelectorAll("#tablaClubes input");
+      inputs.forEach(input => input.disabled = false);
+    }
+
+    async function guardarDatos() {
+      const pass = document.getElementById("adminPass").value;
+      if (pass !== PASSWORD) {
+        alert("Contraseña incorrecta");
+        return;
+      }
+      const filas = document.querySelectorAll("#tablaClubes tbody tr");
+      const datos = [];
+      filas.forEach(fila => {
+        const celdas = fila.querySelectorAll("input");
+        datos.push({
+          Club: celdas[0].value,
+          Oro: parseInt(celdas[1].value),
+          Plata: parseInt(celdas[2].value),
+          Bronce: parseInt(celdas[3].value),
+          Total: parseInt(celdas[4].value)
+        });
+      });
+
+      const res = await fetch(URL, {
+        method: "POST",
+        body: JSON.stringify({
+          password: PASSWORD,
+          sheetName: SHEET_NAME,
+          data: datos
+        }),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      });
+
+      const text = await res.text();
+      if (text === "Success") {
+        alert("Datos guardados correctamente");
+        cargarDatos();
+      } else {
+        alert("Error al guardar: " + text);
+      }
+    }
+
+    cargarDatos();
+  </script>
+  <!-- Enlazar los scripts -->
+<script src="script.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
