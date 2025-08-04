@@ -1,4 +1,4 @@
-let modoAdmin = false;
+var modoAdmin = false;
 const password = "copatintal2025"; // Contraseña para activar edición
 
 // Calcular puntaje total

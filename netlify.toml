@@ -1,10 +1,6 @@
-[functions]
-  directory = "funciones"
 [build]
   functions = "netlify/functions"
   publish = "."
 
-[[redirects]]
-  from = "/guardar-clubes"
-  to = "/.netlify/functions/guardar-clubes"
-  status = 200
+[dev]
+  autoLaunch = true
