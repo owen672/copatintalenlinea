@@ -85,3 +85,12 @@ function activarModoAdmin() {
 }
 
 window.onload = cargarClubes;
+async function guardarClubes(clubes) {
+  const response = await fetch('/.netlify/functions/guardar-clubes', {
+    method: 'POST',
+    body: JSON.stringify(clubes),
+  });
+
+  const result = await response.json();
+  alert(result.message || 'Guardado');
+}
